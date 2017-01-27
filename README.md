@@ -16,9 +16,13 @@ docker logs -f transmission-openvpn```
 
 Example Log output (showing OpenVPN startup)
 > Fri Jan 27 16:44:35 2017 [OpenVPN] Peer Connection Initiated with [AF_INET]21.95.222.73:1194
+
 > Fri Jan 27 16:44:37 2017 SENT CONTROL [OpenVPN]: 'PUSH_REQUEST' (status=1)
+
 > Fri Jan 27 16:44:38 2017 PUSH: Received control message: 'PUSH_REPLY,topology subnet,route-gateway 10.9.0.1,redirect-gateway def1 bypass-dhcp,dhcp-option DNS 8.8.8.8,dhcp-option DNS 8.8.4.4,ping 5,ping-restart 30,ifconfig 10.9.0.12 255.255.255.0'
+
 > ...
+
 > Fri Jan 27 16:44:40 2017 Initialization Sequence Completed
 
 By this point you'll have a basic (completely untweaked) transmission install on the standard port (visible on the machine at http://localhost:9091)
