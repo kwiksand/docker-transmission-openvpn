@@ -5,8 +5,8 @@ client:
    - "47222:47222" # Tracker/torrent port
    - "32011:32011" # RPC/UI Access
   volumes:
-   - ./tranmission/daemon:/var/lib/transmission/.config/transmission-daemon
-   - ./transmission/Dowloads:/media/Downloads
+   - ./transmission/daemon:/var/lib/transmission/.config/transmission-daemon
+   - ./transmission/Downloads:/media/Downloads
    - ./clientcert.ovpn:/etc/openvpn/clientcert.ovpn
 #   - ./crontab:/etc/crontab
   privileged: true
