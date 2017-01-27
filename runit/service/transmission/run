@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if /sbin/ethtool tun0 | grep -q "Link detected: yes"; then
+    exec /usr/bin/transmission-daemon -f -g /var/lib/transmission/.config/transmission-daemon --log-debug
+else
+    exit 1
+fi
