@@ -2,6 +2,8 @@
 
 Transmission-daemon running on top of dependent openvpn client governed by the runit init layer. All driven by external config volumes (see the README.md)
 
+Updated to transmission 2.94
+
 ## Requirements
 * a working OpenVPN account (with associated .ovpn file), this should be confirmed tested and working with an OpenVPN client, i.e ```openvpn myclientcert.ovpn```, or one of the many OpenVPN client implementations (i.e tunnelblick on OSX)
 * a previous knowledge of transmission-daemon is handy, but it's a no brainer to use/work with after initial setup
