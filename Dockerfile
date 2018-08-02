@@ -9,6 +9,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 ADD runit-2.1.2-1.el7.centos.x86_64.rpm /tmp/
 RUN rpm -Uvh /tmp/runit-2.1.2-1.el7.centos.x86_64.rpm && \
     yum install -y epel-release && \
+    rpm -Uvh https://rpm.darkhaven.co/darkhaven-release-1-0.noarch.rpm && \
     yum install -y openvpn cronie rsyslog transmission-daemon ethtool && \
     mkdir -p /etc/service/openvpn /etc/service/crond /etc/service/transmission
 
